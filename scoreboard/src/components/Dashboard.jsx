@@ -39,8 +39,11 @@ const Dashboard = () => {
     }
 
   return (
+
+    <div data-testid="divtag" className="fancy-div">
     <Dash className="testDiv">
         <h3>DASHBOARD JS COMPONENT</h3>
+        <div data-testid="divtag" className="fancy-div"></div>
 
         <Grid>
             <Cards>
@@ -71,6 +74,7 @@ const Dashboard = () => {
             </Cards>
         </Grid>
     </Dash>
+    </div>
   );
 };
 
