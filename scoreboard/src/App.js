@@ -1,18 +1,29 @@
-import React from 'react';
-import Dashboard from './components/Dashboard';
+import React, { Component } from 'react';
+import Display from "./components/Display"; 
+// import Dashboard from './components/Dashboard';
 import './App.css';
 
 
+class App extends Component {
+  constructor() { 
+    super(); 
+    this.state = { 
+      thing: "setting state here"
+    };
+  };
 
 
-function App() {
-  return (
-    <div className="App">
-      <h1> At Bat</h1>
-      <Dashboard/>
-     
-    </div>
-  );
+  render() { 
+    return ( 
+      <div className="App">
+        <div className="display">
+          <h1>APP JS</h1>
+            <Display />
+        </div>
+      </div>
+    );
+  };
 }
+
 
 export default App;

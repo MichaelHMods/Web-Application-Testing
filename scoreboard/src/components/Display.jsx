@@ -1,26 +1,21 @@
-import React from 'react';
-
-
+import React, { Component } from "react";
+import Dashboard from "./Dashboard";
+import { Disp } from "../styles";
 
 class Display extends Component {
     constructor() {
         super();
         this.state = {
-            strike: "",
-            ball: "",
-            foul: "",
-            hit: "",
+           item: "", 
         };
     }
 
     render() {
         return (
-            <div className="main-container">
-                <h1>STRIKE</h1>
-                <h1>BALL</h1>
-                <h1>FOUL</h1>
-                <h1>HIT</h1>
-            </div>
+            <Disp>
+                <h2>DISPLAY JS COMPONENT</h2>
+                <Dashboard />
+            </Disp>
         );
     }
 }
